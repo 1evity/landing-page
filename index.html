@@ -3,61 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>halwa.om</title>
 </head>
 <body>
 
-    <!-- HEADER: Navbar(logo, nav-items) //  -->
-    <header class="main__hero">
-        <div id="navbar">
-            <a href="index.html"><img src="assets/images/halwa-logo.png" alt="logo"/></a>
-            <ul>
-                <li>Products</li>
-                <li>History</li>
-                <li>Customers</li>
-                <li>Contact Us</li>
-            </ul>
-        </div>
+    <div id="container">
+        <!-- HEADER: Navbar(logo, nav-items) // -->
+        <header>
+            <div class="navbar">
+                <a href="index.html"><img src="/assets/images/halwa-logo.png" alt="logo"/></a>
+                <ul>
+                    <li>PRODUCTS</li>
+                    <li>HISTORY</li>
+                    <li>CUSTOMERS</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
 
-        <div id="header card">
-            <h3>Taste & Experience Omani Halva!</h3>
-            <p>A soft, sweet gelatinous mixture flavored with saffron, 
-            cardamom, butter, nuts and rose water. 
-            A delicious sweet treat to enjoy with coffee.</p>
-            <button type="button" onclick="alert('sorry this is just a landing page example')">Buy Halwa Now!</button>
-        </div>
-    </header>
+            <div class="card">
+                <img src="./assets/images/halwa-scroll-main.png">
+                <img src="./assets/images/halwa-scroll-first.png" class="scroll">
 
-    
-    <!--  -->
-    <section id="products-area">
+                <h2>Taste & Experience Omani Halwa!</h2>
+                <p>A soft, sweet gelatinous mixture flavored with saffron, <br>
+                cardamom, butter, nuts and rose water. <br>
+                A delicious sweet treat to enjoy with coffee.</p>
+                <button type="button" onclick="alert('sorry this is just a landing page example')">Buy Halwa Now!</button>
+                <img src="./assets/images/halwa-scroll-second.png" class="scroll">
+            </div>
+        </header>
+
         
-    </section>
+        <!--  -->
+        <section id="products-area">
+            
+        </section>
 
 
-    <!--  -->
-    <section id="wiki-area">
+        <!--  -->
+        <section id="wiki-area">
 
-    </section>
-
-
-    <!--  -->
-    <section id="socials-area">
-
-    </section>
+        </section>
 
 
-    <!--  -->
-    <section id="contact-area">
+        <!--  -->
+        <section id="socials-area">
 
-    </section>
+        </section>
 
 
-    <!--  -->
-    <footer class="page__footer">
+        <!--  -->
+        <section id="contact-area">
 
-    </footer>
+        </section>
+
+
+        <!--  -->
+        <footer>
+            <div class="box">
+                <h3>INFORMATION</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Returns & Refund Policy</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="box">
+                <h3>EXTRAS</h3>
+                <ul>
+                    <li><a href="#">Tell A Friend</a></li>
+                    <li><a href="#">Delivery and Pickup</a></li>
+                    <li><a href="#">Special Orders</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Special Promotions</a></li>
+                    <li><a href="#">Bestsellers</a></li>
+                    <li><a href="#">Featured Products</a></li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>MY ACCOUNT</h3>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Order History</a></li>
+                    <li><a href="#">Wish List</a></li>
+                    <li><a href="#">Account Settings</a></li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>NEWSLETTER</h3>
+                <ul>
+                    <form>
+                        <input type="email" title="Email Address:">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>FOLLOW US</h3>
+                <ul>
+                    <a href="https://www.twitter.com"><img src="./assets/images/icons8-twitterx.svg" alt="twitter"></a>
+                    <a href="https://www.instagram.com"><img src="./assets/images/icons8-instagram.svg" alt="instagram"></a>
+                    <a href="https://www.youtube.com"><img src="./assets/images/icons8-youtube.svg" alt="youtube"></a>
+                </ul>
+            </div>
+        </footer>
+    </div>
     
 </body>
 </html>
