@@ -1,12 +1,78 @@
-.reveal{
-    position: relative;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: 1s all ease;
+/* Utility Classes */
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
-  
-.reveal:current{
-    transform: translateY(0);
-    opacity: 1;
+
+.animate--infinite {
+    animation-iteration-count: infinite;
+}
+
+.animate--delay-1s {
+    animation-delay: 1s;
+}
+
+.animate--fast {
+    animation-duration: 0.6s;
+}
+
+.animate--slow {
+    animation-duration: 2s;
+}
+
+/* Animations */
+@keyframes scrollParallax {
+    from {
+        transform: translateY(-200px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-400px);
+    }
+}
+
+.slideOutLeft {
+    right: 100px;
+    animation: slideOutLeft 2s ease-out 1 both;
+}
+
+.fadeIn {
+    top: 20px;
+    animation: fadeIn 3s ease 1 forwards;
+    z-index: -2;
+}
+
+.parallax1 {
+    top: 20px;
+    animation: scrollParallax 5s ease-in-out 1;
+    z-index: -1;
+}
+
+.parallax2 {
+    top: 20px;
+    animation: scrollParallax 5s ease-in-out 1;
+    z-index: 1;
 }
 
