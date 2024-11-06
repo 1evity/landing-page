@@ -3,7 +3,6 @@
 
 body {
     margin: 0px;
-    height: fit-content;
     background-color: black;
 }
 
@@ -22,16 +21,16 @@ body {
 
     header {
         grid-area: 'hd';
-
-
     }
 
     header .navbar {
+        position: sticky;
         display: flex;
         flex-direction: row;
         justify-content: center;
         background-color: rgb(139, 106, 78);
         height: 20%;
+        z-index: 4;
     }
 
     .navbar a img {
@@ -43,6 +42,7 @@ body {
     .navbar ul {
         display: flex;
         list-style: none;
+        margin-left: 100px;
     }
 
     .navbar li {
@@ -59,18 +59,43 @@ body {
         margin: 100px;
         color: beige;
         font-family: "varela-round";
+        font-size: xx-large;
+    }
+
+    header .card p {
+        margin-left: 60px;
+    }
+
+    header .card button {
+        margin-top: 100px;
+        height: 100px;
+        width: 250px;
+        color: rgb(255, 255, 255);
         font-size: x-large;
+        font-weight: bold;
+        background-color: chocolate;
+        border-style: hidden;
+        border-radius: 20px;
+        transition: 1s;
+    }
+
+    header .card button:hover {
+        box-shadow: rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+        text-shadow: 0 0 10px #ffcb9a;
+        margin-top: 70px;
+        transition: 2s;
     }
 
     header .parallax img {
         position: absolute;
-        width: 100%;
+        height: 110%;
     }
 
     section {
         grid-area: 'sc';
     }
 
+    /* FOOTER */
     footer {
         height: 2fr;
         padding: 20px;
