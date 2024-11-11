@@ -24,7 +24,7 @@
 @keyframes scrollParallax {
     from {
         opacity: 0;
-        transform: translateY(-200px);
+        transform: translateY();
     }
 
     to {
@@ -47,36 +47,45 @@
     }
 }
 
-@keyframes slideOutRight {
+@keyframes slideInRight {
     from {
-        width:max-content;
-        opacity: 0;
-        transform: translateX(1000px);
+        transform: translateX(200%);
     }
 
     to {
-        width: max-content;
-        opacity: 1;
-        transform: translateX(800px);
+        transform: translateX(100%);
     }
 }
 
-.slideOutLeft {
-    animation: slideOutRight 4s ease-out 1 both;
+.slideInRight {
+    z-index: 3;
+    animation: slideInRight 4s ease-out 1 both;
 }
 
 .fadeIn {
-    top: 100px;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    height: 100%;
+    z-index: 0;
     animation: fadeIn 3s ease-in-out 1 both;
 }
 
 .parallax1 {
-    top: 50px;
+    position: absolute;
+    top: 15%;
+    left: 0px;
+    height: 100%;
+    z-index: 1;
     animation: scrollParallax 5s ease-in-out 1 both;
 }
 
 .parallax2 {
-    top: 50px;
+    position: absolute;
+    top: 15%;
+    left: 0px;
+    height: 100%;
+    z-index: 2;
     animation: scrollParallax 5s ease-in-out 1 both;
 }
 
