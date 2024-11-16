@@ -1,18 +1,5 @@
-/* Fonts */
-@font-face {
-    font-family: "botch";
-    src: url(../assets/fonts/Botch.otf) format('opentype');
-}
-
-@font-face {
-    font-family: "varela-round";
-    src: url(../assets/fonts/VarelaRound-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: "itim";
-    src: url(../assets/fonts/Itim-Regular.ttf) format('truetype');
-}
+@import url(fonts.css); /* Fonts we will be using */
+@import url(animations.css);
 
 /*****************************************************************************/
 
